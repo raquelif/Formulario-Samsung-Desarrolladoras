@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js"></script>
+   <title>Formulario Samsung</title>
+</head>
+<body>
+   <div class="caja_formulario">
+   <h1>Create Account</h1>
+      <form id="formulario">
+            <div class="campos">
+               <label for="name">Nombre</label><br>
+               <input type="text" class="name" id="name" name="name" autocomplete="off" pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$" required >
+               <span id="nombreErroneo"  style="display: none;"></span>
+            </div>
+            <div class="campos">
+               <label for="email">Email</label><br>
+               <input type="email" class="email" id="email" autocomplete="off" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+" required >
+               <span id="emailErroneo"></span>
+            </div>
+            <div class="campos">
+               <label for="password">Clave</label><br>
+               <input type="password" class="password" id="password" autocomplete="off" pattern="^.{8,}$" required>
+               <span id="passwordErronea"></span>
+            </div>
+            <div class="campos">
+               <label for="password">Confirme su clave</label><br>
+               <input type="password" class="passwordConfirm" id="passwordConfirm" autocomplete="off" pattern="^.{8,}$" required>
+               <span id="passwordConfirmadaErronea"></span>
+            </div>
+               <button id="boton_Enviar" class="button" >ENVÍAR</button>
+            </form>
+            </div>
+            </div>
+      </form>
+   </div>
+</body>
+</html>
